@@ -5,9 +5,9 @@ import ImageSlider from './components/ImageSlider';
 import Bomb from './components/Bomb';
 
 ReactDOM.render(
-  <div>
-    <ImageSlider></ImageSlider>
-    <Bomb initialCount={120} />
-  </div>,
+  <ImageSlider
+    currentSlideIndex={0}
+  />,
+  <Bomb initialCount={120} />,
   document.getElementById('global')
 );
